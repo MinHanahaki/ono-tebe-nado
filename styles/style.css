@@ -3,6 +3,10 @@ header {
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
     align-items: center;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+    ;
 }
 
 .header__logo {
@@ -13,32 +17,68 @@ header {
     width: 148px;
 }
 
-.header__menu-list {
+.header__links-list {
     display: flex;
     flex-direction: row;
     gap: 26px;
     list-style: circle;
 }
 
-.header__menu-item {
-    text-decoration: underline;
-}
-
-.header__menu-item_active {
-    text-decoration: none;
-}
-
-.header__menu-list .header__menu-item:first-child {
+.header__links-list-item_no-bullit {
     list-style: none;
 }
 
-.header__info {
+.header__address .address {
     width: 240px;
     margin-left: auto;
 }
 
 .cover {
+    position: relative;
     padding-bottom: 179px;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 60%;
+    z-index: 0;
+}
+
+.cover__title {
+    position: relative;
+    font-weight: bold;
+    font-size: 100px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 0.6em;
+}
+
+.letter-spacing {
+    letter-spacing: 0.3em;
+}
+
+.no-letter-spacing {
+    letter-spacing: normal;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
 }
 
 .lots {
