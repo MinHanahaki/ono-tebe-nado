@@ -67,22 +67,27 @@ header {
     position: relative;
     font-weight: bold;
     font-size: 100px;
-    line-height: 122px;
     z-index: 1;
-    padding: 165px 50px 123px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 165px 50px 135px;
     text-transform: uppercase;
 }
 
 .aligned-text {
     display: block;
+    line-height: 115px;
 }
 
 .aligned-text_center {
     text-align: center;
+    line-height: 100px;
 }
 
 .aligned-text_right {
     text-align: right;
+    line-height: 100px;
 }
 
 .letter-spacing-extended {
@@ -268,6 +273,16 @@ footer {
     gap: 0;
     list-style: none;
     text-align: center;
+    line-height: 22px;
+}
+
+.footer__link {
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+}
+
+.footer__link_active {
+    border-bottom: none;
 }
 
 .footer__links-list-item_no-bullit {
